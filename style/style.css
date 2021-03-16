@@ -49,6 +49,7 @@ p, .applicatian h1 {
 
   .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 16px;
   margin-top: 38px;
@@ -133,20 +134,16 @@ display: table-row;
   text-align: left;
 }
 
-
-.container-41 {
-  display: grid;
-  grid-template-columns: 488px 692px;
-  column-gap: 20px;
-  justify-content: center;
-  margin-bottom: 30px;
+.imgworks {
+display: block;
+margin: 30px 20px;
 }
 
-  .container-42 {
-    display: grid;
-    grid-template-columns: 692px 488px;
-    column-gap: 20px;
-    justify-content: center;
+.container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .firstcolumn {
@@ -158,8 +155,9 @@ display: table-row;
 }
 
 .firstcolumn1 {
+  margin: 30px 20px;
   color: #fff;
-  background: url(images/image55.jpg) no-repeat;
+  background: url(../images/image55.jpg) no-repeat;
   }
 
 
@@ -179,6 +177,10 @@ display: table-row;
   margin-top: 65px;
 }
 
+.team1 {
+  margin-bottom: 35px;
+}
+
 .teamh2 {
   padding-top: 50px;
 }
@@ -187,7 +189,6 @@ display: table-row;
   display: table;
   border: none;
   margin-top: 42px;
-  padding-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -197,9 +198,14 @@ display: table-row;
   padding: 0 38px;
 }
 
+.girlabout.cell {
+  text-align: left;
+}
+
 .doworks {
 width: 285px;
 text-align: center;
+margin-top: 20px;
 }
 
 .numberp {
@@ -224,10 +230,7 @@ text-align: center;
   display: grid;
   grid-template-columns: 285px 285px 285px 285px;
   justify-content: center;
-}
-
-.cell.doworks {
-padding: 20px;
+  margin-top: 40px;
 }
 
 p.cell {
