@@ -176,7 +176,7 @@ margin: 30px 20px;
 }
 .team {
   background-color: #E2C4BA;
-  height: 998px;
+  height: auto;
   margin-top: 65px;
 }
 
@@ -190,7 +190,7 @@ margin: 30px 20px;
 
 .allteam {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
+  grid-template-columns: repeat(auto-fill, 320px);
   column-gap: 38px;
 justify-content: center;
 }
@@ -220,9 +220,6 @@ line-height: 30px;
 text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.numberp {
     text-align: center;
     background: #8D7370;
   border-radius: 50%;
@@ -230,7 +227,7 @@ text-align: center;
 
 .howworks {
   display: grid;
-  grid-template-columns: 285px 285px 285px 285px;
+  grid-template-columns: repeat(auto-fill, 285px);
   justify-content: center;
   margin-top: 40px;
 }
@@ -262,18 +259,17 @@ margin-top: 125px;
 }
 
 
-input[type="text"] {
+input[type="text"], input[type=text]:focus {
+  width: 100%;
   color: #F6EDE9;
-  border: none;
+  box-sizing: border-box;
   background-color: #8D7370;
+  border: 1px solid #fff;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
 }
 
-.border {
-  color: #F6EDE9;
-margin-bottom: 31px;
-margin-top: 35px;
-  border-bottom: solid 1px #fff;
-}
 .order {
   background-color: #8D7370;
   height: 624px;
@@ -309,6 +305,7 @@ margin-top: 35px;
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 37px 100px;
 }
