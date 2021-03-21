@@ -25,17 +25,17 @@ Line-height: 50px;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 500px;
+  font-size: 30px;
+  font-weight: 500px;
 }
 
-p, .applicatian h1 {
+p, .application h1 {
   text-align: left;
 }
 
 .container-1 {
-  height: 100vh;
   background: url(../images/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash1.jpg) no-repeat center;
+  min-height: 715px;
   background-size: cover;
 
 }
@@ -71,7 +71,7 @@ padding: 0;
       text-align: center;
     }
 
-.applicatian {
+.application {
   display: grid;
   grid-template-columns: 534.02px;
   margin-left: 185.09px;
@@ -104,8 +104,6 @@ margin-top: 65px;
 .background {
   height: 273px;
   background: #8D7370;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 15px;
 }
 
@@ -137,6 +135,11 @@ display: table-row;
 .imgworks {
 display: block;
 margin: 30px 20px;
+}
+
+.navigation-item {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .container-4 {
