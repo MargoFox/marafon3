@@ -10,7 +10,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #533738;
-  background-color: #E5E5E5;
+  background-color: #EFE6E4;
 }
 
 h1 {
@@ -37,7 +37,6 @@ p, .application h1 {
   background: url(../images/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash1.jpg) no-repeat center;
   min-height: 715px;
   background-size: cover;
-
 }
 
 .navigation {
@@ -92,7 +91,7 @@ color: #533738;
 
 .container-2 {
 display: grid;
-grid-template-columns: 444.54px 528px;
+grid-template-columns: repeat(auto-fit, minmax(444.54px, 528px));
 column-gap: 61.69px;
 justify-content: center;
 }
@@ -178,6 +177,7 @@ margin: 30px 20px;
   background-color: #E2C4BA;
   height: auto;
   margin-top: 65px;
+  padding-bottom: 80px;
 }
 
 .team1 {
@@ -192,6 +192,8 @@ margin: 30px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 320px);
   column-gap: 38px;
+  margin-left: 15%;
+  margin-right: 15%;
 justify-content: center;
 }
 
@@ -229,6 +231,8 @@ text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, 285px);
   justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 40px;
 }
 
@@ -236,27 +240,48 @@ p.cell {
 text-align: center;
 }
 
-.feedbackh2 {
+.feedback {
+  margin-bottom: 65px;
   margin-top: 65px;
+}
+
+.container55 {
+  display: flex;
+  align-items: center;
+  flex-basis: 80px auto 80px;
+  justify-content: space-around;
+  width: auto;
+}
+form[class="button55"] {
+  border-radius: 50%;
+  background-color: #CC8B86;
+  width: 72px;
+  height: 72px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input[name="button55"] {
+  width: 32px;
+margin-top: 28px;
 }
 
 .container5 {
     display: grid;
-    grid-template-columns: 407px 407px;
+    grid-template-columns: repeat(2, minmax(407px, 407px));
     column-gap: 20px;
     justify-content: center;
-
-}
-.d1 {
-margin-top: 125px;
 }
 
-.d2 {
-  margin-top: 40px;
+.d1, .d2 {
+margin-top: auto;
+margin-bottom: auto;
 }
+
 .d2 img {
   margin-bottom: 20px;
 }
+
 
 
 input[type="text"], input[type=text]:focus {
@@ -272,15 +297,26 @@ input[type="text"], input[type=text]:focus {
 
 .order {
   background-color: #8D7370;
-  height: 624px;
+  height: auto;
 }
 
 .container6 {
   display: grid;
-  grid-template-columns: 508px 590px;
+  grid-template-columns: repeat(auto-fit, minmax(508px, 590px));
   column-gap: 20px;
+  row-gap: 20px;
   justify-content: center;
 }
+
+::-webkit-input-placeholder { color:#f00; font-family: 'Montserrat'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 30px; letter-spacing: 0em; color:#F6EDE9;}
+::-moz-placeholder { color:#f00; font-family: 'Montserrat'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 30px; letter-spacing: 0em; color:#F6EDE9;}
+:-ms-input-placeholder { color:#f00; font-family: 'Montserrat'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 30px; letter-spacing: 0em; color:#F6EDE9;}
+:-moz-placeholder { color:#f00; font-family: 'Montserrat'; font-size: 18px; font-style: normal; font-weight: 400; line-height: 30px; letter-spacing: 0em; color:#F6EDE9;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 
 .order {
     color: #fff;
